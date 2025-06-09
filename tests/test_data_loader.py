@@ -14,7 +14,7 @@ torch.manual_seed(123)
 
 tokenizer = tiktoken.get_encoding("gpt2")
 
-file_path = "the-verdict.txt"
+file_path = "./data/dataset/the-verdict.txt"
 with open(file_path, "r", encoding="utf-8") as file:
     text_data = file.read()
 

@@ -12,18 +12,18 @@ from trainer.trainer_classification import train_classifier_simple
 tokenizer = tiktoken.get_encoding("gpt2")
 
 train_dataset = SpamDataset(
-    csv_file="D:\\Learning\\deep-learning-learn\\gpt-clone\\data\\dataset\\train.csv",
+    csv_file="./data/dataset/train.csv",
     max_length=None,
     tokenizer=tokenizer
 )
 
 val_dataset = SpamDataset(
-    csv_file="D:\\Learning\\deep-learning-learn\\gpt-clone\\data\\dataset\\validation.csv",
+    csv_file="./data/dataset/validation.csv",
     max_length=train_dataset.max_length,
     tokenizer=tokenizer
 )
 test_dataset = SpamDataset(
-    csv_file="D:\\Learning\\deep-learning-learn\\gpt-clone\\data\\dataset\\test.csv",
+    csv_file="./data/dataset/test.csv",
     max_length=train_dataset.max_length,
     tokenizer=tokenizer
 )
