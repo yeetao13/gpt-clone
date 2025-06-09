@@ -34,7 +34,7 @@ gpt.out_head = torch.nn.Linear(
 tokenizer = tiktoken.get_encoding("gpt2")
 
 train_dataset = SpamDataset(
-    csv_file="D:\\Learning\\deep-learning-learn\\gpt-clone\\data\\dataset\\train.csv",
+    csv_file="./data/dataset/train.csv",
     max_length=None,
     tokenizer=tokenizer
 )
